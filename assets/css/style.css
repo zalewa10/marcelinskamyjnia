@@ -345,7 +345,7 @@ h3 { font-size: clamp(1.15rem, 1.6vw, 1.35rem); }
   z-index: 2;
   padding: 90px 24px 76px;
 }
-.hero--page .hero__content { padding: 56px 24px; max-width: 600px; }
+.hero--page .hero__content { padding: 56px 24px; max-width: 800px; }
 .hero__badge {
   display: inline-flex;
   align-items: center;
