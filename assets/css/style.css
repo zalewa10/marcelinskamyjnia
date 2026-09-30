@@ -35,6 +35,7 @@
   --shadow-sm: 0 2px 10px rgba(10, 20, 35, 0.08);
   --shadow-md: 0 12px 32px rgba(10, 20, 35, 0.14);
   --shadow-lg: 0 24px 60px rgba(6, 15, 28, 0.28);
+  --sahdow-xl: 0 36px 90px rgba(6, 15, 28, 0.48);
 
   --container: 1180px;
 }
@@ -317,9 +318,9 @@ h3 { font-size: clamp(1.15rem, 1.6vw, 1.35rem); }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  min-height: 78vh;
+  height: calc(100svh - 107px);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   color: var(--white);
   overflow: hidden;
 }
@@ -343,9 +344,8 @@ h3 { font-size: clamp(1.15rem, 1.6vw, 1.35rem); }
   position: relative;
   z-index: 2;
   padding: 90px 24px 76px;
-  max-width: 720px;
 }
-.hero--page .hero__content { padding: 56px 24px; max-width: 680px; }
+.hero--page .hero__content { padding: 56px 24px; max-width: 600px; }
 .hero__badge {
   display: inline-flex;
   align-items: center;
@@ -708,6 +708,18 @@ h3 { font-size: clamp(1.15rem, 1.6vw, 1.35rem); }
   font-size: 0.86rem;
   color: var(--navy-950);
 }
+.vehicle-feature {
+  margin-top: 40px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.vehicle-feature img {
+  width: 100%;
+  height: clamp(220px, 32vw, 420px);
+  object-fit: cover;
+  display: block;
+}
 
 /* ---------- Google reviews carousel ---------- */
 .reviews-head {
@@ -834,7 +846,7 @@ h3 { font-size: clamp(1.15rem, 1.6vw, 1.35rem); }
 .location-map {
   background: var(--navy-950);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  /* padding: 32px; */
   box-shadow: var(--shadow-lg);
   display: flex;
   align-items: center;
